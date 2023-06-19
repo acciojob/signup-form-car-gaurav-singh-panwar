@@ -7,10 +7,45 @@
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <form action="/signup" method="post">
+        <h1>Sign Up</h1>
 
+        <input type="text" id="name" placeholder="Name" required>
+        <label for="name">Name</label>
+
+        <input type="email" id="email" placeholder="Email" required>
+        <label for="email">Email</label>
+
+        <input type="radio" name="gender" id="gender_m" value="Male">
+        <label for="gender_m">Male</label>
+        <input type="radio" name="gender" id="gender_f" value="Female">
+        <label for="gender_f">Female</label>
+
+        <select name="car" id="cars">
+            <option value="">--Please choose an option</option>
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Mercedes">Mercedes</option>
+        </select>
+        <label for="cars">Choose your car</label>
+
+        <input type="number" id="age" placeholder="Age" required>
+        <label for="age">Age</label>
+
+        <input type="date" id="date" placeholder="Date of Birth" required>
+        <label for="date">Date of Birth</label>
+
+        <input type="tel" id="rel" placeholder="Phone Number" required>
+        <label for="tel">Phone Number</label>
+
+        <input type="password" id="password" placeholder="Password">
+        <label for="password">Password</label>
+
+        <input type="checkbox" id="tos" name="tos" value="yes">
+        <label for="tos">I agree to the Terms of Services</label>
+
+        <button type="submit">Signup</button>
+    </form>
 </body>
 
 </html>
